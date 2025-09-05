@@ -1,0 +1,11 @@
+<svg id="Button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="299" height="55" viewBox="0 0 299 55">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ad8749"/>
+      <stop offset="1" stop-color="#dcbb75"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_18787" data-name="Rectangle 18787" width="299" height="55" rx="16" fill="url(#linear-gradient)"/>
+  <text id="Book_reservation_now" data-name="Book reservation now" transform="translate(206 32)" fill="#fff" font-size="17" font-family="Inter-Medium, Inter" font-weight="500"><tspan x="-176" y="0">Book reservation now</tspan></text>
+  <path id="Path_41543" data-name="Path 41543" d="M25.824,8.587h0L17.653.455a1.564,1.564,0,0,0-2.206,2.216L20.932,8.13H1.564a1.563,1.563,0,1,0,0,3.127H20.932l-5.485,5.459a1.564,1.564,0,0,0,2.206,2.216l8.17-8.13h0A1.565,1.565,0,0,0,25.824,8.587Z" transform="translate(260.056 16.806)" fill="#fff" opacity="0.518"/>
+</svg>
