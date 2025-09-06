@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import Logo from "../assets/logo.png"; 
-import Flag from "../assets/Flag.png"; 
+import Logo from "../assets/logo.png";
+import Flag from "../assets/Flag.png";
 import snapchat from "../assets/snapchat.svg"
 import Insta from "../assets/instagram.svg"
 import Tiktok from "../assets/tiktok.svg"
@@ -35,11 +35,11 @@ const Header = () => {
             </div>
 
             {/* Login */}
-            <button className="bg-linear-to-b from-[#B89353] to-[#D2B06C] hover:bg-yellow-600 text-black px-10 py-2 rounded-lg font-base transition">
+            <button className="bg-linear-to-b from-[#B89353] to-[#D2B06C] hover:bg-yellow-600 text-white px-10 py-2 rounded-lg font-base transition">
               Log in
             </button>
 
-          {/* Language */}
+            {/* Language */}
             <div className="flex items-center text-white cursor-pointer space-x-2 mr-34">
               <ChevronDown className=" w-4 h-4" />
               <img
@@ -62,7 +62,7 @@ const Header = () => {
         </div>
 
         {/* ===== Row 2: Navigation (Desktop only) ===== */}
-        <nav className="hidden lg:flex justify-center space-x-26 py-3 border-t border-gray-700">
+        <nav className="hidden lg:flex justify-center lg:space-x-26 py-3 border-t border-gray-700">
           {[
             "DINE WITH US",
             "PLAN YOUR VISIT",
@@ -81,55 +81,67 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* ===== Mobile Menu ===== */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-gradient-to-b from-black to-green-900 text-white px-6 py-6">
-            {/* Links */}
-            <nav className="flex flex-col space-y-4">
-              {[
-                "DINE WITH US",
-                "PLAN YOUR VISIT",
-                "EVENTS",
-                "VIEW GROVES MAP",
-                "OUR STORY",
-                "CONTACT US",
-              ].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="border-b border-gray-700 pb-2 text-sm font-medium tracking-wider hover:text-yellow-400"
-                >
-                  {item}
-                </a>
-              ))}
-            </nav>
+  <div className="fixed inset-0 h-screen w-screen z-50 bg-gradient-to-r from-[#273506] to-[#161F02] text-white flex flex-col justify-between">
+    {/* Top bar: Logo and Close */}
+    <div className="flex items-center justify-between px-6 py-4 absolute top-0 left-0 right-0 z-10 bg-transparent">
+      <img src={Logo} alt="The Groves" className="h-10 w-auto" />
+      <button
+        className="text-white"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <X className="text-[#B89353]" size={32} />
+      </button>
+    </div>
 
-            {/* Language + login */}
-            <div className="mt-6 flex flex-col items-start space-y-4">
-              <div className="flex items-center cursor-pointer">
-                <img
-                  src="https://flagcdn.com/w20/gb.png"
-                  alt="English"
-                  className="w-5 h-3 mr-2"
-                />
-                <span className="text-sm">English</span>
-                <ChevronDown className="ml-1 w-4 h-4" />
-              </div>
+    {/* Main content */}
+    <div className="flex flex-col justify-center flex-1 px-6 pt-20 pb-8">
+      {/* Links */}
+      <nav className="flex flex-col space-y-4">
+        {[
+          "DINE WITH US",
+          "PLAN YOUR VISIT",
+          "EVENTS",
+          "VIEW GROVES MAP",
+          "OUR STORY",
+          "CONTACT US",
+        ].map((item) => (
+          <a
+            key={item}
+            href="#"
+            className="border-b border-gray-700 pb-2 text-sm font-medium tracking-wider hover:text-yellow-400"
+          >
+            {item}
+          </a>
+        ))}
+      </nav>
 
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-lg font-medium transition">
-                Log in
-              </button>
-            </div>
+      {/* Language + login */}
+      <div className="mt-6 flex flex-col items-start space-y-4">
+        <div className="flex items-center cursor-pointer">
+          <img
+            src={Flag}
+            alt="English"
+            className="w-5 h-5 mr-2"
+          />
+          <span className="text-sm">English</span>
+          <ChevronDown className="ml-1 w-4 h-4" />
+        </div>
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-lg font-medium transition">
+          Log in
+        </button>
+      </div>
+    </div>
 
-            {/* Socials bottom */}
-            <div className="flex items-center space-x-6 mt-8 text-xl">
-              <i className="fab fa-tiktok hover:text-yellow-400"></i>
-              <i className="fab fa-instagram hover:text-yellow-400"></i>
-              <i className="fab fa-x-twitter hover:text-yellow-400"></i>
-              <i className="fab fa-snapchat hover:text-yellow-400"></i>
-            </div>
-          </div>
-        )}
+    {/* Socials bottom */}
+    <div className="flex space-x-6 mb-6 mx-4">
+      <img src={Tiktok} alt="TikTok" className="w-6 h-6" />
+      <img src={Insta} alt="Instagram" className="w-6 h-6" />
+      <img src={Threads} alt="Threads" className="w-6 h-6" />
+      <img src={snapchat} alt="Snapchat" className="w-6 h-6" />
+    </div>
+  </div>
+)}
       </div>
     </header>
   );

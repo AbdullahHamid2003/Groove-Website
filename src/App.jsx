@@ -6,6 +6,7 @@ import ExperiencesSection from './components/ExperiencesSection';
 import CreateExperience from './components/CreateExperience';
 import Footer from './components/Footer';
 import './App.css';
+import MapSection from './components/MapSection';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <AttractionsSection />
       <ExperiencesSection />
       <CreateExperience />
-      {/* <Footer /> */}
+      <MapSection />
+      <Footer />
     </div>
   );
 }
