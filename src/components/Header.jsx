@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4">
-        {/* ===== Row 1: Logo + Right Side ===== */}
+        {/* Row 1: Logo + Right Side */}
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <div className="flex items-center">
@@ -61,7 +61,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* ===== Row 2: Navigation (Desktop only) ===== */}
+        {/* Row 2: Navigation (Desktop only) */}
         <nav className="hidden lg:flex justify-center lg:space-x-26 py-3 border-t border-gray-700">
           {[
             "DINE WITH US",

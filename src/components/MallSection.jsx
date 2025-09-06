@@ -1,6 +1,5 @@
 import { Play } from 'lucide-react';
 import MallSectionImage from '../assets/MallSectionImage.png';
-import playButton from "../assets/PlayButton.png"
 
 const MallSection = () => {
   return (

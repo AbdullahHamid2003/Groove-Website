@@ -1,22 +1,9 @@
-/* @import '@fontsource/playfair-display/400.css';
-@import '@fontsource/playfair-display/300.css';
-@import '@fontsource/playfair-display/700.css';
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/700.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
-@import 'tailwindcss/utilities'; */
 @import "tailwindcss";
 
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -114,4 +101,3 @@ a:focus-visible {
     line-height: 1.1;
   }
 }
-

@@ -1,5 +1,5 @@
 import React from "react";
-import MapImg from "../assets/Map.png"; // replace with actual map image
+import MapImg from "../assets/Map.png"; 
 
 const MapSection = () => {
   return (

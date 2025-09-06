@@ -6,8 +6,6 @@ import AttractionImage_1 from '../assets/Attraction_Image_1.png';
 import AttractionImage_2 from '../assets/Attraction_Image_2.png';
 import AttractionImage_3 from '../assets/Attraction_Image_3.png';
 import AttractionImage_4 from '../assets/Attraction_Image_4.png';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
