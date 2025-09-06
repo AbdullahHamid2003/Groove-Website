@@ -18,7 +18,7 @@ const experiences = [
 
 const CreateExperience = () => {
   return (
-    <section className="bg-gradient-to-r from-[#273506] to-[#161F02] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-r from-[#273506] to-[#161F02] py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left content */}
         <div className="lg:w-1/2 text-center lg:text-left">

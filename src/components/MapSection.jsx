@@ -3,8 +3,7 @@ import MapImg from "../assets/Map.png"; // replace with actual map image
 
 const MapSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#273506] to-[#161F02] 
-  px-6 md:px-12 lg:px-20 py-8 border-b border-b-amber-200 shadow-sm">
+    <section className="bg-gradient-to-r from-[#273506] to-[#161F02] px-6 md:px-12 lg:px-20 py-8 border-b border-b-amber-200 shadow-sm">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left - Map */}
         <div className="flex-1 flex justify-center">
