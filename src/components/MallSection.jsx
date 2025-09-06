@@ -4,7 +4,7 @@ import playButton from "../assets/PlayButton.png"
 
 const MallSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#273506] to-[#161F02]">
+    <section className="py-18 bg-gradient-to-r from-[#273506] to-[#161F02]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">

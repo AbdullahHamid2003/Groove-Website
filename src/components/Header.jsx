@@ -27,7 +27,7 @@ const Header = () => {
           {/* Right side (desktop only) */}
           <div className="hidden lg:flex items-center space-x-2">
             {/* Socials */}
-            <div className="flex items-center space-x-3 text-white">
+            <div className="flex items-center space-x-5 mr-5 text-white">
               <img src={Tiktok} alt="TikTok" className="w-5 h-5" />
               <img src={Insta} alt="Instagram" className="w-5 h-5" />
               <img src={Threads} alt="Threads" className="w-5 h-5" />
@@ -57,7 +57,7 @@ const Header = () => {
             className="lg:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {isMenuOpen ? <X className="text-[#B89353]" size={28} /> : <Menu className="text-[#B89353]" size={28} />}
           </button>
         </div>
 

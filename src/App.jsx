@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import MallSection from './components/MallSection';
 import AttractionsSection from './components/AttractionsSection';
 import ExperiencesSection from './components/ExperiencesSection';
+import CreateExperience from './components/CreateExperience';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
       <MallSection />
       <AttractionsSection />
       <ExperiencesSection />
+      <CreateExperience />
       {/* <Footer /> */}
     </div>
   );
